@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * 快速排序思路：
+ * 分治思想，给定一个锚点，将数组中小于锚点的值尽可能向左移动
+ */
 function QS(&$arr, $start, $end) {
     if($start >= $end) {
         return;
