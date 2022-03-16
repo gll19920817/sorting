@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * 冒牌排序思想：
+ * 多次遍历数组，且每次将数组中最大值往后移动
+ */
 function BS(&$arr, $length) {
     for($i=0; $i<$length; $i++) {
         for($j=0; $j<$length-$i-1; $j++) {
@@ -8,8 +11,6 @@ function BS(&$arr, $length) {
                 $arr[$j] = $arr[$j+1];
                 $arr[$j+1] = $tmp;
             }
-
-            continue;
         }
     }
 }
